@@ -1,0 +1,54 @@
+.container {
+  display: flex;
+  padding: 50px 0px;
+  flex-direction: column;
+  background-color: var(--background-secondary);
+  margin-top: 5px;
+  gap: 50px;
+}
+
+.item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+  gap: 25px;
+}
+
+.img {
+  border-radius: 5px;
+}
+
+.h1 {
+  font-size: 30px;
+  max-width: 300px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.h3 {
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+.p {
+  text-align: center;
+}
+
+.skillItems {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.skillItem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0px;
+  background-color: var(--background);
+  padding: 25px;
+  border-radius: 10px;
+  width: 130px;
+}
