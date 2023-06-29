@@ -26,6 +26,7 @@
 
 .img {
   padding: 25px;
+  object-fit: contain;
 }
 
 .linkContainer {
