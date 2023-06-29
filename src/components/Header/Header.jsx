@@ -5,7 +5,6 @@ import Link from "next/link";
 import Navbar from "../Navbar/Navbar";
 
 export default function Header() {
-
   return (
     <header className={styles.container}>
       <div className={styles.item}>
@@ -32,7 +31,6 @@ export default function Header() {
           <a href="#" target="_blank">
             <Image src="/xing.svg" width={20} height={20} />
           </a>
-
           <div className={styles.line}></div>
         </div>
       </div>
