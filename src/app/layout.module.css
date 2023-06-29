@@ -1,0 +1,64 @@
+.container {
+  background-color: var(--background);
+}
+
+.header {
+  height: 60px;
+}
+
+.navbar {
+  display: none;
+}
+
+@media only screen and (min-width: 1000px) {
+  .navbar {
+    display: block;
+    position: fixed;
+    top: 25px;
+    right: 125px;
+    z-index: 100;
+  }
+}
+
+.children {
+  height: 5000px;
+}
+
+.support {
+  display: none;
+}
+
+.footer {
+  height: 100px;
+}
+
+@media only screen and (min-width: 1000px) {
+  .container {
+    display: flex;
+    
+  }
+
+  .header {
+    display: block;
+    width: 100px;
+    height: 100vh;
+    position: sticky;
+    top: 0;
+  }
+
+  .children {
+    flex: 1;
+  }
+
+  .support {
+    display: block;
+    width: 100px;
+    height: 100vh;
+    position: sticky;
+    top: 0;
+  }
+
+  .footer {
+    display: none;
+  }
+}

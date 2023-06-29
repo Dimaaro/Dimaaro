@@ -1,0 +1,27 @@
+.nav {
+  background-color: red;
+  padding: 7px;
+  border-radius: 5px;
+  background-color: var(--background-secondary)
+}
+
+.ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  border-radius: 5px;
+}
+
+.a {
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.active {
+  color: var(--secondary);
+}
+
+.img {
+  display: none;
+}

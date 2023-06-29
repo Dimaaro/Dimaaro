@@ -7,8 +7,7 @@ import Portfolio from "@/components/Portfolio/Portfolio";
 export default function Home() {
   return (
     <main className={styles.main}>
-      <About />
-      <Portfolio />
+      MainContent
     </main>
   );
 }
