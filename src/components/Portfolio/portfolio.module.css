@@ -1,6 +1,7 @@
 .container {
   display: flex;
   flex-direction: column;
+  padding: 0 25px;
 }
 
 .h2 {
@@ -21,7 +22,7 @@
   border-radius: 10px;
   height: 200px;
   background-color: var(--background-secondary);
-  margin: 0 50px;
+  margin: 0 25px;
 }
 
 .img {

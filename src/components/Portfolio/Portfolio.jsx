@@ -11,21 +11,17 @@ export default function Portfolio() {
       <div className={styles.items}>
         {data.map((item) => (
           <div key={item.id} className={styles.item}>
-            <Link href={item.url}>
+            <a href={item.url} target="_blank">
               <div className={styles.imgContainer}>
-                <Image
-                  src={item.image}
-                  fill={true}
-                  className={styles.img}
-                />
+                <Image src={item.image} fill={true} className={styles.img} />
               </div>
               <div className={styles.linkContainer}>
                 <div className={styles.icon}>
                   <Image src="/link.svg" width={8.7} height={8.7} />
                 </div>
-                <div className={styles.link}>{ item.name }</div>
+                <div className={styles.link}>{item.name}</div>
               </div>
-            </Link>
+            </a>
           </div>
         ))}
       </div>
