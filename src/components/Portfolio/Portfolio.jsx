@@ -1,13 +1,13 @@
 import Image from "next/image";
 import styles from "./portfolio.module.css";
-import Link from "next/link";
 
 import data from "./data.js";
+import Footer from "../Footer/Footer";
 
 export default function Portfolio() {
   return (
-    <section className={styles.container}>
-      <h2 className={styles.h2}>Projekte</h2>
+    <section className={styles.PortfolioContainer}>
+      <h2 className={styles.PortfolioH2}>Projekte</h2>
       <div className={styles.items}>
         {data.map((item) => (
           <div key={item.id} className={styles.item}>
@@ -25,6 +25,7 @@ export default function Portfolio() {
           </div>
         ))}
       </div>
+      <div className={styles.footer}><Footer /></div>
     </section>
   );
 }

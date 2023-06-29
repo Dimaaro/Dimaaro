@@ -1,0 +1,299 @@
+.container {
+}
+
+@media only screen and (min-width: 1100px) {
+  .container {
+    display: flex;
+  }
+}
+
+.h1 {
+  font-size: 40px;
+  text-align: center;
+  margin-top: 50px;
+}
+
+.projektanfrage {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  padding: 25px 25px;
+  align-items: center;
+}
+
+@media only screen and (min-width: 1100px) {
+  .projektanfrage {
+    flex: 1;
+    align-items: start;
+    overflow-y: scroll;
+    height: 100vh;
+    margin-top: 0px;
+  }
+
+  .projektanfrage::-webkit-scrollbar {
+        width: 0px;
+    }
+}
+
+.span {
+  font-size: 24px;
+  font-weight: 300;
+  text-align: center;
+}
+
+@media only screen and (min-width: 1100px) {
+  .span {
+    text-align: start;
+  }
+}
+
+.p {
+  text-align: center;
+}
+
+@media only screen and (min-width: 1100px) {
+  .p {
+    text-align: start;
+  }
+}
+
+.h2 {
+  margin-top: 50px;
+  text-align: center;
+  font-size: 35px;
+}
+
+.dataContainer {
+  background-color: var(--background-secondary);
+  border-radius: 25px;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  padding: 35px;
+  font-size: 20px;
+}
+
+@media only screen and (min-width: 1100px) {
+  .dataContainer {
+    max-width: 450px;
+  }
+}
+
+.dataRow {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.dataCol {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.dataA {
+  font-weight: 300;
+}
+
+.dataB {
+  font-weight: bold;
+}
+
+.icons {
+  display: flex;
+  gap: 10px;
+}
+
+@media only screen and (min-width: 1100px) {
+  .socialNone {
+    display: none !important;
+  }
+  .icons {
+    display: none;
+  }
+}
+
+.contact {
+  padding: 25px 25px;
+  
+}
+
+@media only screen and (min-width: 1100px) {
+  .contact {
+    flex: 1;
+    overflow-y: scroll;
+    height: 100vh;
+    margin-top: 0px;
+  }
+
+  .contact::-webkit-scrollbar {
+        width: 0px;
+    }
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-top: 25px;
+}
+
+@media only screen and (min-width: 1100px) {
+  .form {
+    margin: 25px;
+  }
+}
+
+.item {
+  position: relative;
+}
+
+.input {
+  background-color: var(--background-secondary);
+  border: none;
+  outline: none;
+  padding: 20px 20px 20px 70px;
+  font-size: 16px;
+  width: 100%;
+  border-radius: 10px;
+  position: relative;
+}
+
+.iconName {
+  position: absolute;
+  top: 50%;
+  left: 20px;
+  transform: translateY(-55%);
+}
+
+.iconEmail {
+  position: absolute;
+  top: 50%;
+  left: 20px;
+  transform: translateY(-50%);
+}
+
+.iconMessage {
+  position: absolute;
+  top: 13px;
+  left: 20px;
+}
+
+/* Genel stil */
+.toggleSwitch {
+  position: relative;
+  display: inline-block;
+  width: 40px;
+  height: 24px;
+  margin: 10px;
+}
+
+.toggle {
+  display: flex;
+  align-items: center;
+}
+
+/* Giriş stil */
+.toggleSwitch .toggleInput {
+  display: none;
+}
+
+/* Anahtarın stilinin etrafındaki etiketin stil */
+.toggleSwitch .toggleLabel {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 40px;
+  height: 24px;
+  background-color: var(--danger);
+  border-radius: 34px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+/* Anahtarın yuvarlak kısmının stil */
+.toggleSwitch .toggleLabel::before {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  top: 2px;
+  left: 2px;
+  background-color: #fff;
+  box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s;
+}
+
+/* Anahtarın etkin hale gelmesindeki stil değişiklikleri */
+.toggleSwitch .toggleInput:checked + .toggleLabel {
+  background-color: var(--success);
+}
+
+.toggleSwitch .toggleInput:checked + .toggleLabel::before {
+  transform: translateX(16px);
+}
+
+/* Light tema */
+.toggleSwitch.light .toggleLabel {
+  background-color: #bebebe;
+}
+
+.toggleSwitch.light .toggleInput:checked + .toggleLabel {
+  background-color: #9b9b9b;
+}
+
+.toggleSwitch.light .toggleInput:checked + .toggleLabel::before {
+  transform: translateX(6px);
+}
+
+/* Dark tema */
+.toggleSwitch.dark .toggleLabel {
+  background-color: #4b4b4b;
+}
+
+.toggleSwitch.dark .toggleInput:checked + .toggleLabel {
+  background-color: #717171;
+}
+
+.toggleSwitch.dark .toggleInput:checked + .toggleLabel::before {
+  transform: translateX(16px);
+}
+
+.button {
+  border: none;
+  background-color: var(--success);
+  border-radius: 10px;
+  padding: 12px;
+  font-size: 15px;
+  color: #000;
+  font-weight: bold;
+}
+
+.elink {
+  color: var(--secondary);
+}
+
+
+.about {
+        flex: 1;
+        overflow-y: scroll;
+        height: 100vh;
+        margin-top: 0px;
+        
+    }
+
+    .about::-webkit-scrollbar {
+        width: 0px;
+    }
+   
+    
+    .projekte {
+        flex: 1;
+        overflow-y: scroll;
+        height: 100vh;
+    }
+
+    .projekte::-webkit-scrollbar {
+        width: 0px;
+    }

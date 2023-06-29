@@ -1,0 +1,37 @@
+.main {
+}
+
+.about {
+    background-color: var(--background-secondary);
+    margin-top: 5px;
+    
+}
+
+@media only screen and (min-width:1100px) {
+    .main {
+        display: flex;
+    }
+
+    .about {
+        flex: 1;
+        overflow-y: scroll;
+        height: 100vh;
+        margin-top: 0px;
+        
+    }
+
+    .about::-webkit-scrollbar {
+        width: 0px;
+    }
+   
+    
+    .projekte {
+        flex: 1;
+        overflow-y: scroll;
+        height: 100vh;
+    }
+
+    .projekte::-webkit-scrollbar {
+        width: 0px;
+    }
+}

@@ -10,7 +10,7 @@
   display: none;
 }
 
-@media only screen and (min-width: 1000px) {
+@media only screen and (min-width: 1100px)  {
   .navbar {
     display: block;
     position: fixed;
@@ -21,7 +21,7 @@
 }
 
 .children {
-  height: 5000px;
+  
 }
 
 .support {
@@ -32,18 +32,17 @@
   height: 100px;
 }
 
-@media only screen and (min-width: 1000px) {
+@media only screen and (min-width: 1100px)  {
   .container {
     display: flex;
-    
   }
 
   .header {
     display: block;
     width: 100px;
     height: 100vh;
-    position: sticky;
     top: 0;
+    border-right: 5px solid var(--background);
   }
 
   .children {
@@ -54,7 +53,6 @@
     display: block;
     width: 100px;
     height: 100vh;
-    position: sticky;
     top: 0;
   }
 

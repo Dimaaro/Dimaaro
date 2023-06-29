@@ -1,5 +1,5 @@
 "use client";
-import styles from "./page.module.css";
+import styles from "./footer.module.css";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 
