@@ -1,12 +1,13 @@
 import Image from "next/image";
 import styles from "./page.module.css";
 import Link from "next/link";
+import Footer from "@/components/Footer/Footer";
 
 export default function Kontakt() {
   return (
     <main className={styles.container}>
       <div className={styles.projektanfrage}>
-      <h1 className={styles.h1}>Projektanfrage</h1>
+        <h1 className={styles.h1}>Projektanfrage</h1>
         <h2 className={styles.span}>
           Noch heute einen Erstgespräch vereinbaren - ich bin gespannt darauf,
           gemeinsam mit Dir daran zu arbeiten und Dein Vorhaben erfolgreich
@@ -47,13 +48,13 @@ export default function Kontakt() {
               </div>
               <div className={styles.dataB}>
                 <div className={styles.icons}>
-                  <a href="#" target="_blank">
+                  <a href="https://github.com/dimaaro" target="_blank">
                     <Image src="/github.svg" width={20} height={20} />
                   </a>
-                  <a href="#" target="_blank">
+                  <a href="https://www.instagram.com/dimaaro" target="_blank">
                     <Image src="/instagram.svg" width={20} height={20} />
                   </a>
-                  <a href="#" target="_blank">
+                  <a href="https://www.linkedin.com/in/dimaaro" target="_blank">
                     <Image src="/linkedin.svg" width={20} height={20} />
                   </a>
                   <a href="#" target="_blank">
@@ -66,67 +67,79 @@ export default function Kontakt() {
         </div>
       </div>
       <div className={styles.contact}>
-        <h2 className={styles.h2}>Kontakt</h2>
-        <form className={styles.form}>
-          <div className={styles.item}>
-            <input type="text" name="name" id="name" className={styles.input} />
-            <Image
-              src="/name.svg"
-              width={37.29}
-              height={29.83}
-              className={styles.iconName}
-            />
-          </div>
-          <div className={styles.item}>
-            <input
-              type="email"
-              name="email"
-              id="email"
-              className={styles.input}
-            />
-            <Image
-              src="/email.svg"
-              width={37.29}
-              height={29.83}
-              className={styles.iconEmail}
-            />
-          </div>
-          <div className={styles.item}>
-            <textarea
-              name="nachricht"
-              id="nachricht"
-              cols="30"
-              rows="10"
-              className={styles.input}
-            ></textarea>
-            <Image
-              src="/desc.svg"
-              width={37.29}
-              height={29.83}
-              className={styles.iconMessage}
-            />
-          </div>
-          <div className={styles.toggle}>
-            <div className={styles.toggleItem}>
-              <div className={styles.toggleSwitch}>
-                <input
-                  className={styles.toggleInput}
-                  id="toggle"
-                  type="checkbox"
-                />
-                <label className={styles.toggleLabel} for="toggle"></label>
+        <div className={styles.contactItem}>
+          <form className={styles.form}>
+            <h2 className={styles.h2}>Kontakt</h2>
+            <div className={styles.item}>
+              <input
+                type="text"
+                name="name"
+                id="name"
+                className={styles.input}
+              />
+              <Image
+                src="/name.svg"
+                width={37.29}
+                height={29.83}
+                className={styles.iconName}
+              />
+            </div>
+            <div className={styles.item}>
+              <input
+                type="email"
+                name="email"
+                id="email"
+                className={styles.input}
+              />
+              <Image
+                src="/email.svg"
+                width={37.29}
+                height={29.83}
+                className={styles.iconEmail}
+              />
+            </div>
+            <div className={styles.item}>
+              <textarea
+                name="nachricht"
+                id="nachricht"
+                cols="30"
+                rows="10"
+                className={styles.input}
+              ></textarea>
+              <Image
+                src="/desc.svg"
+                width={37.29}
+                height={29.83}
+                className={styles.iconMessage}
+              />
+            </div>
+            <div className={styles.toggle}>
+              <div className={styles.toggleItem}>
+                <div className={styles.toggleSwitch}>
+                  <input
+                    className={styles.toggleInput}
+                    id="toggle"
+                    type="checkbox"
+                  />
+                  <label className={styles.toggleLabel} for="toggle"></label>
+                </div>
+              </div>
+              <div className={styles.toggleItem}></div>
+
+              <div className={styles.toggleText}>
+                Ich habe dieErreichbarkeit
+                <Link href="/datenschutz" className={styles.elink}>
+                  Datenschutzverordnung
+                </Link>{" "}
+                zur Kenntnis genommen. Ich stimme zu, dass meine Daten zur
+                Kontaktaufnahme genutzt und auf elektronischem Wege gespeichert
+                werden.
               </div>
             </div>
-            <div className={styles.toggleItem}></div>
-
-            <div className={styles.toggleText}>
-              Ich habe die <Link href="/datenschutz" className={styles.elink}>Datenschutzverordnung</Link>  zur Kenntnis genommen. Ich
-              stimme zu, dass meine Daten zur Kontaktaufnahme genutzt und auf
-              elektronischem Wege gespeichert werden.
-            </div>
-          </div>
-          <button className={styles.button}>Anfrage stellen</button>
-        </form>
+            <button className={styles.button}>Anfrage stellen</button>
+          </form>
+          <Footer />
+        </div>
       </div>
     </main>
   );

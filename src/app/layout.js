@@ -2,7 +2,6 @@ import "./globals.css";
 import { Roboto_Condensed } from "next/font/google";
 import Script from "next/script";
 import Header from "@/components/Header/Header";
-import Footer from "@/components/Footer/Footer";
 import styles from "./layout.module.css"
 import Support from "@/components/Support/Support";
 import Navbar from "@/components/Navbar/Navbar";
@@ -36,9 +35,6 @@ export default function RootLayout({ children }) {
           <div className={styles.support}>
             <Support />
           </div>
-          <footer className={styles.footer}>
-            <Footer />
-          </footer>
         </div>
         <Script src="/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js" />
       </body>
