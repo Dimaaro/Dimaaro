@@ -10,7 +10,7 @@ export default function Kontakt() {
         <h1 className={styles.h1}>Projektanfrage</h1>
         <h2 className={styles.span}>
           Noch heute einen Erstgespräch vereinbaren - ich bin gespannt darauf,
-          gemeinsam mit Dir daran zu arbeiten und Dein Vorhaben erfolgreich
+          gemeinsam mit dir daran zu arbeiten und Dein Vorhaben erfolgreich
           umzusetzen.
         </h2>
         <p className={styles.p}>

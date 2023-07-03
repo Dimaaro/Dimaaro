@@ -11,7 +11,7 @@
   .container {
     gap: 0;
     justify-content: space-between;
-    padding: 50px;
+    padding: 75px;
   }
 }
 
@@ -65,7 +65,12 @@
 }
 
 .p {
-  text-align: center;
+  text-align: center; 
+}
+
+.pText {
+  line-height: 1.5rem;
+  font-weight: 300;
 }
 
 @media only screen and (min-width: 1100px) {
