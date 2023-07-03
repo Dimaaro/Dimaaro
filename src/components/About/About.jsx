@@ -21,12 +21,15 @@ export default function About() {
         <p className={styles.pText}>
           Seit 2021 arbeite ich als Designer und Front End Entwickler eng mit
           meinen Kunden zusammen, um einfache und interaktive Lösungen für
-          komplexe Probleme zu schaffen. Mit meiner Leidenschaft für Design und
-          Programmierung erstelle ich maßgeschneiderte Webseiten, die sowohl
-          ästhetisch ansprechend als auch funktional sind. Egal, ob du eine
-          persönliche Webseite, einen Blog oder eine Unternehmenspräsenz
-          benötigst, ich stehe dir zur Seite, um deine Vision in die Realität
-          umzusetzen. Derzeit arbeite ich hauptsächlich mit NodeJS und Wordpress
+          komplexe Probleme zu schaffen.
+        </p>
+        <p className={styles.pText}>
+          Mit meiner Leidenschaft für Design und Programmierung erstelle ich
+          maßgeschneiderte Webseiten, die sowohl ästhetisch ansprechend als auch
+          funktional sind. Egal, ob du eine persönliche Webseite, einen Blog
+          oder eine Unternehmenspräsenz benötigst, ich stehe dir zur Seite, um
+          deine Vision in die Realität umzusetzen. Derzeit arbeite ich
+          hauptsächlich mit NodeJS und Wordpress
         </p>
         <p className={styles.p}>
           Ich freue mich darauf, deine Vision zum Leben zu erwecken

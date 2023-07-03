@@ -25,6 +25,15 @@ export default function Impressum() {
           </p>
         </div>
         <div className={styles.item}>
+          <h2 className={styles.h2}>Umsatzsteuer-ID</h2>
+          <p className={styles.p}>
+            Umsatzsteuer-Identifikationsnummer gem&auml;&szlig; &sect; 27 a
+            Umsatzsteuergesetz:
+            <br />
+            DE355108839
+          </p>
+        </div>
+        <div className={styles.item}>
           <h2 className={styles.h2}>EU-Streitschlichtung</h2>
           <p>
             Die Europ&auml;ische Kommission stellt eine Plattform zur
