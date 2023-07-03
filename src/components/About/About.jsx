@@ -11,6 +11,7 @@ export default function About() {
             width={100}
             height={100}
             className={styles.img}
+            alt="Profilbild von Dimaaro"
           />
           <h1 className={styles.h1}>
             Hi, ich bin Dima.<span className="text-secondary"> Designer</span> &

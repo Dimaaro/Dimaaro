@@ -19,16 +19,16 @@ export default function Header() {
           <Navbar />
         </div>
         <div className={styles.social}>
-          <a href="#" target="_blank">
+          <a href="https://github.com/dimaaro" target="_blank">
             <Image src="/github.svg" width={20} height={20} />
           </a>
-          <a href="#" target="_blank">
+          <a href="https://www.instagram.com/dimaaro" target="_blank">
             <Image src="/instagram.svg" width={20} height={20} />
           </a>
-          <a href="#" target="_blank">
+          <a href="https://de.linkedin.com/in/dimaaro" target="_blank">
             <Image src="/linkedin.svg" width={20} height={20} />
           </a>
-          <a href="#" target="_blank">
+          <a href="https://www.xing.com/profile/dimitrij_rogotnev" target="_blank">
             <Image src="/xing.svg" width={20} height={20} />
           </a>
           <div className={styles.line}></div>

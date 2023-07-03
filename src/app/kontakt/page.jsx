@@ -57,7 +57,7 @@ export default function Kontakt() {
                   <a href="https://www.linkedin.com/in/dimaaro" target="_blank">
                     <Image src="/linkedin.svg" width={20} height={20} />
                   </a>
-                  <a href="#" target="_blank">
+                  <a href="https://www.xing.com/profile/dimitrij_rogotnev" target="_blank">
                     <Image src="/xing.svg" width={20} height={20} />
                   </a>
                 </div>
