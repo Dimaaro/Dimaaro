@@ -1,7 +1,7 @@
 import Image from "next/image";
 import styles from "./page.module.css";
-import Link from "next/link";
 import Footer from "@/components/Footer/Footer";
+import ContactForm from "./ContactForm";
 
 export default function Kontakt() {
   return (
@@ -68,79 +68,7 @@ export default function Kontakt() {
       </div>
       <div className={styles.contact}>
         <div className={styles.contactItem}>
-          <form className={styles.form}>
-            <h2 className={styles.h2}>Kontakt</h2>
-            <div className={styles.item}>
-              <input
-                type="text"
-                name="name"
-                id="name"
-                className={styles.input}
-                placeholder="Name"
-              />
-              <Image
-                src="/name.svg"
-                width={37.29}
-                height={29.83}
-                className={styles.iconName}
-              />
-            </div>
-            <div className={styles.item}>
-              <input
-                type="email"
-                name="email"
-                id="email"
-                className={styles.input}
-                placeholder="E-Mail-Adresse"
-              />
-              <Image
-                src="/email.svg"
-                width={37.29}
-                height={29.83}
-                className={styles.iconEmail}
-              />
-            </div>
-            <div className={styles.item}>
-              <textarea
-                name="nachricht"
-                id="nachricht"
-                cols="30"
-                rows="10"
-                className={styles.input}
-                placeholder="Nachricht"
-              ></textarea>
-              <Image
-                src="/desc.svg"
-                width={37.29}
-                height={29.83}
-                className={styles.iconMessage}
-              />
-            </div>
-            <div className={styles.toggle}>
-              <div className={styles.toggleItem}>
-                <div className={styles.toggleSwitch}>
-                  <input
-                    className={styles.toggleInput}
-                    id="toggle"
-                    type="checkbox"
-                  />
-                  <label className={styles.toggleLabel} htmlFor="toggle"></label>
-                </div>
-              </div>
-              <div className={styles.toggleItem}></div>
-
-              <div className={styles.toggleText}>
-                Ich habe die{" "}
-                <Link href="/datenschutz" className={styles.elink}>
-                  Datenschutzverordnung
-                </Link>{" "}
-                zur Kenntnis genommen. Ich stimme zu, dass meine Daten zur
-                Kontaktaufnahme genutzt und auf elektronischem Wege gespeichert
-                werden.
-              </div>
-            </div>
-            <button type="submit" className={styles.button}>Anfrage stellen</button>
-          </form>
+          <ContactForm />
           <Footer />
         </div>
       </div>
