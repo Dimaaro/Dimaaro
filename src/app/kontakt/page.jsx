@@ -124,7 +124,7 @@ export default function Kontakt() {
                     id="toggle"
                     type="checkbox"
                   />
-                  <label className={styles.toggleLabel} for="toggle"></label>
+                  <label className={styles.toggleLabel} htmlFor="toggle"></label>
                 </div>
               </div>
               <div className={styles.toggleItem}></div>
