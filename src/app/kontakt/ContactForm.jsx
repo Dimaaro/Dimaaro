@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import styles from "./page.module.css";
 import Link from "next/link";
 import Image from "next/image";
@@ -8,38 +8,36 @@ export default function ContactForm() {
   const [loading, setLoading] = useState(false);
 
   async function handleSubmit(event) {
-    event.preventDefault()
+    event.preventDefault();
     setLoading(true);
-    
+
     const data = {
-			name: String(event.target.name.value),
-			email: String(event.target.email.value),
-			message: String(event.target.message.value),
-		};
+      name: String(event.target.name.value),
+      email: String(event.target.email.value),
+      message: String(event.target.message.value),
+    };
 
     const response = await fetch("api/contact", {
-			method: "POST",
-			headers: {
-				"Content-Type": "application/json",
-			},
-			body: JSON.stringify(data),
-		});
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(data),
+    });
 
     if (response.ok) {
-			console.log("Message sent successfully");
+      console.log("Message sent successfully");
       setLoading(false);
-			// reset the form
-			event.target.name.value = "";
-			event.target.email.value = "";
-			event.target.message.value = "";
-		}
+      // reset the form
+      event.target.name.value = "";
+      event.target.email.value = "";
+      event.target.message.value = "";
+    }
 
     if (!response.ok) {
-			console.log("Error sending message");
-		}
+      console.log("Error sending message");
+    }
   }
-
-
 
   return (
     <form className={styles.form} onSubmit={handleSubmit}>
@@ -95,25 +93,27 @@ export default function ContactForm() {
           className={styles.iconMessage}
         />
       </div>
-      <div className={styles.toggle}>
-        <div className={styles.toggleItem}>
-          <div className={styles.toggleSwitch}>
-            <input className={styles.toggleInput} id="toggle" type="checkbox" required />
-            <label className={styles.toggleLabel} htmlFor="toggle"></label>
-          </div>
-        </div>
-        <div className={styles.toggleItem}></div>
 
-        <div className={styles.toggleText}>
-          Ich habe die{" "}
+      <div className={styles.item}>
+      <div className={styles.toggle}>
+      <input
+          type="checkbox"
+          required
+          id="confirm"
+          className={styles.toggleInput}
+        />
+        <label htmlFor="confirm" className={styles.toggleLabel}>
+        Ich habe die{" "}
           <Link href="/datenschutz" className={styles.elink}>
             Datenschutzverordnung
           </Link>{" "}
           zur Kenntnis genommen. Ich stimme zu, dass meine Daten zur
           Kontaktaufnahme genutzt und auf elektronischem Wege gespeichert
           werden.
-        </div>
+        </label>
       </div>
+      </div>
+      
       <button type="submit" className={styles.button}>
         Anfrage stellen
       </button>
