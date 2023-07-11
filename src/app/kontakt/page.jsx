@@ -139,7 +139,7 @@ export default function Kontakt() {
                 werden.
               </div>
             </div>
-            <button className={styles.button}>Anfrage stellen</button>
+            <button type="submit" className={styles.button}>Anfrage stellen</button>
           </form>
           <Footer />
         </div>
