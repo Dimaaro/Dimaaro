@@ -71,7 +71,7 @@ export default function About() {
           </div>
           <div className={styles.skillItem}>
             <Image src="/bootstrap.svg" width={20} height={20} />
-            <h3 className={styles.h3}>Bootstrap</h3>
+            <h3 className={styles.h3}>Bootstraptest</h3>
           </div>
         </div>
       </div>
