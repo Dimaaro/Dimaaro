@@ -52,6 +52,7 @@ export default function ContactForm() {
           className={styles.input}
           placeholder="Name"
           autoComplete="off"
+          required
         />
         <Image
           src="/name.svg"
@@ -68,6 +69,7 @@ export default function ContactForm() {
           className={styles.input}
           placeholder="E-Mail-Adresse"
           autoComplete="off"
+          required
         />
         <Image
           src="/email.svg"
@@ -96,7 +98,7 @@ export default function ContactForm() {
       <div className={styles.toggle}>
         <div className={styles.toggleItem}>
           <div className={styles.toggleSwitch}>
-            <input className={styles.toggleInput} id="toggle" type="checkbox" />
+            <input className={styles.toggleInput} id="toggle" type="checkbox" required />
             <label className={styles.toggleLabel} htmlFor="toggle"></label>
           </div>
         </div>

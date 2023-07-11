@@ -3,14 +3,18 @@ import nodemailer from "nodemailer"
 export default async function handler(req, res) {
   const { name, email, message } = req.body;
 
+  const host = process.env.DB_HOST
+  const user = process.env.DB_USER
+  const pass = process.env.DB_PASS
+
   const transporter = nodemailer.createTransport({
-    host: "mx2fcf.netcup.net",
+    host: host,
     port: 465,
     secure: true,
     auth: {
       // TODO: replace `user` and `pass` values from <https://forwardemail.net>
-      user: "	support@dimaaro.com",
-      pass: "1R6c4l3*lsgs5454",
+      user: user,
+      pass: pass,
     },
   });
 
@@ -18,11 +22,15 @@ export default async function handler(req, res) {
 
 
     const mail = await transporter.sendMail({
-      from: '"Fred Foo 👻" <foo@example.com>', // sender address
-      to: "email@dra-media.de", // list of receivers
-      subject: "Hello ✔", // Subject line
-      text: "Hello world?", // plain text body
-      html: "<b>Hello world?</b>", // html body
+      from: `Kontaktformular: <${user}>`, // sender address
+      to: user, // list of receivers
+      subject: "Kontaktformular ✔", // Subject line
+      text: "Kontaktformular Webseite Dimaaro:", // plain text body
+      html: `
+        <p>Name: ${name}</p>
+        <p>E-Mail-Adresse: ${email}</p>
+        <p>Nachricht: ${message}</p>
+      `, // html body
     });
 
 
