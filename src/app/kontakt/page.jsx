@@ -76,6 +76,7 @@ export default function Kontakt() {
                 name="name"
                 id="name"
                 className={styles.input}
+                placeholder="Name"
               />
               <Image
                 src="/name.svg"
@@ -90,6 +91,7 @@ export default function Kontakt() {
                 name="email"
                 id="email"
                 className={styles.input}
+                placeholder="E-Mail-Adresse"
               />
               <Image
                 src="/email.svg"
@@ -105,6 +107,7 @@ export default function Kontakt() {
                 cols="30"
                 rows="10"
                 className={styles.input}
+                placeholder="Nachricht"
               ></textarea>
               <Image
                 src="/desc.svg"
@@ -127,7 +130,7 @@ export default function Kontakt() {
               <div className={styles.toggleItem}></div>
 
               <div className={styles.toggleText}>
-                Ich habe dieErreichbarkeit
+                Ich habe die{" "}
                 <Link href="/datenschutz" className={styles.elink}>
                   Datenschutzverordnung
                 </Link>{" "}
