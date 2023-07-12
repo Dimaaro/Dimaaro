@@ -301,3 +301,12 @@
 .projekte::-webkit-scrollbar {
   width: 0px;
 }
+
+.alert {
+  margin: 16px 0;
+  border: 1px solid rgb(15, 81, 50);;
+  border-radius: 6px;
+  padding: 16px;
+  background-color: #051B11;
+  color: #75b798;
+}

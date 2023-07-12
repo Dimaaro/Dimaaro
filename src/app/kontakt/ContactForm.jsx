@@ -7,6 +7,10 @@ import { useState } from "react";
 export default function ContactForm() {
   const [loading, setLoading] = useState(false);
 
+  let [textMessage, setTextMessage] = useState();
+  
+  
+
   async function handleSubmit(event) {
     event.preventDefault();
     setLoading(true);
@@ -26,12 +30,17 @@ export default function ContactForm() {
     });
 
     if (response.ok) {
-      console.log("Message sent successfully");
+      console.log("Nachricht wurde erfolgreich gesendet!");
+
       setLoading(false);
       // reset the form
       event.target.name.value = "";
       event.target.email.value = "";
       event.target.message.value = "";
+      event.target.confirm.checked = false;
+      setTextMessage(() => {
+        return <div className={styles.alert}>Nachricht wurde erfolgreich gesendet!</div>
+      })
     }
 
     if (!response.ok) {
@@ -98,28 +107,33 @@ export default function ContactForm() {
       </div>
 
       <div className={styles.item}>
-      <div className={styles.toggle}>
-      <input
-          type="checkbox"
-          required
-          id="confirm"
-          className={styles.toggleInput}
-        />
-        <label htmlFor="confirm" className={styles.toggleLabel}>
-        Ich habe die{" "}
-          <Link href="/datenschutz" className={styles.elink}>
-            Datenschutzverordnung
-          </Link>{" "}
-          zur Kenntnis genommen. Ich stimme zu, dass meine Daten zur
-          Kontaktaufnahme genutzt und auf elektronischem Wege gespeichert
-          werden.
-        </label>
+        <div className={styles.toggle}>
+          <input
+            type="checkbox"
+            required
+            id="confirm"
+            className={styles.toggleInput}
+            defaultChecked={false}
+          />
+          <label htmlFor="confirm" className={styles.toggleLabel}>
+            Ich habe die{" "}
+            <Link href="/datenschutz" className={styles.elink}>
+              Datenschutzverordnung
+            </Link>{" "}
+            zur Kenntnis genommen. Ich stimme zu, dass meine Daten zur
+            Kontaktaufnahme genutzt und auf elektronischem Wege gespeichert
+            werden.
+          </label>
+        </div>
       </div>
-      </div>
-      
+
       <button type="submit" className={styles.button}>
         Anfrage stellen
       </button>
+
+      <div className={styles.alertContainer}>
+        {textMessage}
+      </div>
     </form>
   );
 }
