@@ -57,6 +57,7 @@ export default function ContactForm() {
           width={37.29}
           height={29.83}
           className={styles.iconName}
+          alt="Dimaaro Kontaktformular Name Icon"
         />
       </div>
       <div className={styles.item}>
@@ -74,6 +75,7 @@ export default function ContactForm() {
           width={37.29}
           height={29.83}
           className={styles.iconEmail}
+          alt="Dimaaro Kontaktformular Email Icon"
         />
       </div>
       <div className={styles.item}>
@@ -91,6 +93,7 @@ export default function ContactForm() {
           width={37.29}
           height={29.83}
           className={styles.iconMessage}
+          alt="Dimaaro Kontaktformular Nachricht Icon"
         />
       </div>
 

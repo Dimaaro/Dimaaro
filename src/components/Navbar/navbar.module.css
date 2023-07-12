@@ -20,7 +20,3 @@
 .active {
   color: var(--secondary);
 }
-
-.img {
-  display: none;
-}

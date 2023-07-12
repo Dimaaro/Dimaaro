@@ -13,11 +13,11 @@ export default function Portfolio() {
           <div key={item.id} className={styles.item}>
             <a href={item.url} target="_blank">
               <div className={styles.imgContainer}>
-                <Image src={item.image} fill={true} className={styles.img} />
+                <Image src={item.image} fill sizes="(max-width: 1200px) 100vw" className={styles.img} alt={item.desc} />
               </div>
               <div className={styles.linkContainer}>
                 <div className={styles.icon}>
-                  <Image src="/link.svg" width={8.7} height={8.7} />
+                  <Image src="/link.svg" width={8.7} height={8.7} alt="Dimaaro Projekt Link Icon" />
                 </div>
                 <div className={styles.link}>{item.name}</div>
               </div>

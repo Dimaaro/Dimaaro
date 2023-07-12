@@ -20,16 +20,16 @@ export default function Header() {
         </div>
         <div className={styles.social}>
           <a href="https://github.com/dimaaro" target="_blank">
-            <Image src="/github.svg" width={20} height={20} />
+            <Image src="/github.svg" width={20} height={20} alt="Dimaaro Github"/>
           </a>
           <a href="https://www.instagram.com/dimaaro" target="_blank">
-            <Image src="/instagram.svg" width={20} height={20} />
+            <Image src="/instagram.svg" width={20} height={20} alt="Dimaaro Instagram"/>
           </a>
           <a href="https://de.linkedin.com/in/dimaaro" target="_blank">
-            <Image src="/linkedin.svg" width={20} height={20} />
+            <Image src="/linkedin.svg" width={20} height={20} alt="Dimaaro linkedIn"/>
           </a>
           <a href="https://www.xing.com/profile/dimitrij_rogotnev" target="_blank">
-            <Image src="/xing.svg" width={20} height={20} />
+            <Image src="/xing.svg" width={20} height={20} alt="Dimaaro Xing"/>
           </a>
           <div className={styles.line}></div>
         </div>

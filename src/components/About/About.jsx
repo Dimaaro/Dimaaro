@@ -11,7 +11,7 @@ export default function About() {
             width={100}
             height={100}
             className={styles.img}
-            alt="Profilbild von Dimaaro"
+            alt="Profilbild Dimaaro"
           />
           <h1 className={styles.h1}>
             Hi, ich bin Dima.<span className="text-secondary"> Designer</span> &
@@ -39,38 +39,48 @@ export default function About() {
         <h2>Frameworks</h2>
         <div className={styles.skillItems}>
           <div className={styles.skillItem}>
-            <Image src="/nextjs.svg" width={20} height={20} />
+            <Image
+              src="/nextjs.svg"
+              width={20}
+              height={20}
+              alt="Dimaaro Frameworks NextJS"
+            />
             <h3 className={styles.h3}>NextJS</h3>
           </div>
           <div className={styles.skillItem}>
-            <Image src="/wordpress.svg" width={20} height={20} />
+            <Image
+              src="/wordpress.svg"
+              width={20}
+              height={20}
+              alt="Dimaaro Frameworks WordPress"
+            />
             <h3 className={styles.h3}>WordPress</h3>
           </div>
         </div>
         <h2>Technologien & Skills</h2>
         <div className={styles.skillItems}>
           <div className={styles.skillItem}>
-            <Image src="/html5.svg" width={20} height={20} />
+            <Image src="/html5.svg" width={20} height={20} alt="Dimaaro Technologien & Skills HTML" />
             <h3 className={styles.h3}>HTML</h3>
           </div>
           <div className={styles.skillItem}>
-            <Image src="/css3.svg" width={20} height={20} />
+            <Image src="/css3.svg" width={20} height={20} alt="Dimaaro Technologien & Skills CSS"/>
             <h3 className={styles.h3}>CSS</h3>
           </div>
           <div className={styles.skillItem}>
-            <Image src="/javascript.svg" width={20} height={20} />
+            <Image src="/javascript.svg" width={20} height={20} alt="Dimaaro Technologien & Skills JavaScript"/>
             <h3 className={styles.h3}>JavaScript</h3>
           </div>
           <div className={styles.skillItem}>
-            <Image src="/nodejs.svg" width={20} height={20} />
+            <Image src="/nodejs.svg" width={20} height={20} alt="Dimaaro Technologien & Skills NodeJS"/>
             <h3 className={styles.h3}>NodeJS</h3>
           </div>
           <div className={styles.skillItem}>
-            <Image src="/react.svg" width={20} height={20} />
+            <Image src="/react.svg" width={20} height={20} alt="Dimaaro Technologien & Skills ReactJS"/>
             <h3 className={styles.h3}>ReactJS</h3>
           </div>
           <div className={styles.skillItem}>
-            <Image src="/bootstrap.svg" width={20} height={20} />
+            <Image src="/bootstrap.svg" width={20} height={20} alt="Dimaaro Technologien & Skills Bootstrap"/>
             <h3 className={styles.h3}>Bootstrap</h3>
           </div>
         </div>

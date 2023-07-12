@@ -1,5 +1,4 @@
 "use client";
-import Image from "next/image";
 import styles from "./navbar.module.css";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
@@ -24,7 +23,7 @@ export default function Navbar() {
     <nav className={styles.nav}>
       <ul className={styles.ul}>
         {links.map((link) => (
-          <li className={styles.li}>
+          <li className={styles.li} key={link.id}>
             <Link
               key={link.id}
               href={link.url}
@@ -38,9 +37,6 @@ export default function Navbar() {
             </Link>
           </li>
         ))}
-        <div className={styles.img}>
-          <Image src="/dimaaro.png" width={22} height={22} />
-        </div>
       </ul>
     </nav>
   );
