@@ -1,6 +1,11 @@
 import Footer from "@/components/Footer/Footer";
 import styles from "./page.module.css";
 
+export const metadata = {
+  title: "Impressum - Dimaaro Designer & Front End Entwickler",
+  robots: "noindex,follow",
+};
+
 export default function Impressum() {
   return (
     <div className={styles.container}>

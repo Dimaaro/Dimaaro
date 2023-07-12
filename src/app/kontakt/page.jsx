@@ -3,6 +3,13 @@ import styles from "./page.module.css";
 import Footer from "@/components/Footer/Footer";
 import ContactForm from "./ContactForm";
 
+export const metadata = {
+  title: "Kontakt - Dimaaro Designer & Front End Entwickler",
+  description:
+    "Noch heute einen Erstgespräch vereinbaren - ich bin gespannt darauf, gemeinsam mit dir daran zu arbeiten und Dein Vorhaben erfolgreich umzusetzen.",
+  robots: "index,follow",
+};
+
 export default function Kontakt() {
   return (
     <main className={styles.container}>
@@ -49,16 +56,39 @@ export default function Kontakt() {
               <div className={styles.dataB}>
                 <div className={styles.icons}>
                   <a href="https://github.com/dimaaro" target="_blank">
-                    <Image src="/github.svg" width={20} height={20} alt="Dimaaro Github"/>
+                    <Image
+                      src="/github.svg"
+                      width={20}
+                      height={20}
+                      alt="Dimaaro Github"
+                    />
                   </a>
                   <a href="https://www.instagram.com/dimaaro" target="_blank">
-                    <Image src="/instagram.svg" width={20} height={20} alt="Dimaaro Instagram"/>
+                    <Image
+                      src="/instagram.svg"
+                      width={20}
+                      height={20}
+                      alt="Dimaaro Instagram"
+                    />
                   </a>
                   <a href="https://www.linkedin.com/in/dimaaro" target="_blank">
-                    <Image src="/linkedin.svg" width={20} height={20} alt="Dimaaro LinkedIn"/>
+                    <Image
+                      src="/linkedin.svg"
+                      width={20}
+                      height={20}
+                      alt="Dimaaro LinkedIn"
+                    />
                   </a>
-                  <a href="https://www.xing.com/profile/dimitrij_rogotnev" target="_blank">
-                    <Image src="/xing.svg" width={20} height={20} alt="Dimaaro Xing"/>
+                  <a
+                    href="https://www.xing.com/profile/dimitrij_rogotnev"
+                    target="_blank"
+                  >
+                    <Image
+                      src="/xing.svg"
+                      width={20}
+                      height={20}
+                      alt="Dimaaro Xing"
+                    />
                   </a>
                 </div>
               </div>
