@@ -4,7 +4,7 @@ import Footer from "@/components/Footer/Footer";
 import ContactForm from "./ContactForm";
 
 export const metadata = {
-  title: "Kontakt - Dimaaro Designer & Front End Entwickler",
+  title: "Kontakt",
   description:
     "Noch heute einen Erstgespräch vereinbaren - ich bin gespannt darauf, gemeinsam mit dir daran zu arbeiten und Dein Vorhaben erfolgreich umzusetzen.",
   robots: "index,follow",

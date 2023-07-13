@@ -2,8 +2,8 @@ import Footer from "@/components/Footer/Footer";
 import styles from "./page.module.css";
 
 export const metadata = {
-  title: "Datenschutz - Dimaaro Designer & Front End Entwickler",
-  robots: "noindex,follow",
+  title: "Datenschutz",
+  robots: "noindex, nofollow",
 };
 
 export default function Datenschutz() {

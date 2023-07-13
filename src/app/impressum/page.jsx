@@ -2,8 +2,8 @@ import Footer from "@/components/Footer/Footer";
 import styles from "./page.module.css";
 
 export const metadata = {
-  title: "Impressum - Dimaaro Designer & Front End Entwickler",
-  robots: "noindex,follow",
+  title: "Impressum",
+  robots: "noindex, nofollow",
 };
 
 export default function Impressum() {

@@ -13,7 +13,7 @@ const robotoCondensed = Roboto_Condensed({
 });
 
 export const metadata = {
-  title: "Dimaaro - Designer & Front End Entwickler",
+  title: "Dimaaro",
   description: "Hi, ich bin Dimaaro. Designer & Front End Entwickler. Seit 2021 arbeite ich als Designer und Front End Entwickler eng mit meinen Kunden zusammen, um einfache und interaktive Lösungen für komplexe Probleme zu schaffen. ",
   robots: "index,follow",
 };
