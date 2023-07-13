@@ -8,11 +8,11 @@ export default function Header() {
   return (
     <header className={styles.container}>
       <div className={styles.item}>
-        <h1 className={styles.h1}>
+        <div className={styles.logoContainer}>
           <Link href="/" className={styles.logo}>
             DIMAARO
           </Link>
-        </h1>
+        </div>
       </div>
       <div className={styles.item}>
         <div className={styles.navbar}>
