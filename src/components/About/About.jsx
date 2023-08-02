@@ -7,9 +7,9 @@ export default function About() {
       <div className={styles.item}>
         <div className={styles.avatar}>
           <Image
-            src="/dimaaro.png"
-            width={100}
-            height={100}
+            src="/profilbild.png"
+            width={512}
+            height={512}
             className={styles.img}
             alt="Profilbild Dimaaro"
           />
