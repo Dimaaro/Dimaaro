@@ -14,12 +14,12 @@ export default function About() {
             alt="Profilbild Dimaaro"
           />
           <h1 className={styles.h1}>
-            Hi, ich bin Dima.<span className="text-secondary"> Designer</span> &
+            Hi, ich bin Dimitrij.<span className="text-secondary"> Designer</span> &
             <span className="text-secondary"> Front End Entwickler</span>.
           </h1>
         </div>
         <p className={styles.pText}>
-          Seit 2021 arbeite ich als Designer und Front End Entwickler eng mit
+          Seit 2019 arbeite ich als Designer und Front End Entwickler eng mit
           meinen Kunden zusammen, um einfache und interaktive Lösungen für
           komplexe Probleme zu schaffen.
         </p>
@@ -28,11 +28,10 @@ export default function About() {
           maßgeschneiderte Webseiten, die sowohl ästhetisch ansprechend als auch
           funktional sind. Egal, ob du eine persönliche Webseite, einen Blog
           oder eine Unternehmenspräsenz benötigst, ich stehe dir zur Seite, um
-          deine Vision in die Realität umzusetzen. Derzeit arbeite ich
-          hauptsächlich mit NodeJS und Wordpress
+          deine Vision in die Realität umzusetzen. Meine Spezialgebiete sind NodeJS und Wordpress.
         </p>
         <p className={styles.p}>
-          Ich freue mich darauf, deine Vision zum Leben zu erwecken
+          Ihr Experte für verkaufsstarkes <span className="text-secondary">Branding</span> und <span className="text-secondary">Webauftritte</span>.
         </p>
       </div>
       <div className={styles.item}>

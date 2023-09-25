@@ -8,32 +8,39 @@ const portfolio = [
   },
   {
     id: 2,
-    name: "IBO E-Technik GmbH",
-    url: "https://elektriksoest.de",
-    image: "/iboetechnik.png",
-    desc: "Dimaaro Projekt IBO E-Technik GmbH",
+    name: "Lorenz Kaiser",
+    url: "https://lorenzkaiser.com",
+    image: "/lorenzkaiser.png",
+    desc: "Dimaaro Projekt Lorenz Kaiser",
   },
   {
     id: 3,
-    name: "Consulution GmbH",
-    url: "https://consulution.de",
-    image: "/consulution.png",
-    desc: "Dimaaro Projekt Consulution GmbH",
+    name: "IBO E-Technik GmbH",
+    url: "https://elektriksoest.de",
+    image: "/elektriksoest.png",
+    desc: "Dimaaro Projekt Elektrik Soest Gmbh",
   },
   {
     id: 4,
-    name: "Ambulanter Pflegedienst",
+    name: "Gesundheitspartner Bergkamen",
     url: "https://gesundheitspartner-bergkamen.de",
-    image: "/gesundheitspartnerbergkamen.png",
-    desc: "Dimaaro Projekt Ambulanter Pflegedienst",
+    image: "/gesundheitspartner-bergkamen.png",
+    desc: "Dimaaro Projekt Gesundheitspartner Bergkamen",
   },
   {
     id: 5,
     name: "TuS Lintfort",
     url: "https://tus-lintfort.de",
-    image: "/tuslintfort.png",
+    image: "/tus-lintfort.png",
     desc: "Dimaaro Projekt TuS Lintfort",
   },
+  {
+    id: 6,
+    name: "WML Pflegedienst GmbH",
+    url: "https://wml-pflegedienst.de",
+    image: "/wml-pflegedienst.png",
+    desc: "Dimaaro Projekt WML Pflegedienst GmbH",
+  }
 ];
 
 export default portfolio;
