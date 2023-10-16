@@ -15,8 +15,6 @@
   }
 }
 
-.item {
-}
 
 .logoContainer {
   all: inherit;
@@ -43,6 +41,14 @@
 
 .social {
   display: none;
+}
+
+.social a {
+  transition: all .15s ease-in-out;
+}
+
+.social a:hover {
+  transform: scale(1.1);
 }
 
 @media only screen and (min-width: 1100px)  {
