@@ -22,7 +22,7 @@ export default async function handler(req, res) {
 
 
     const mail = await transporter.sendMail({
-      from: `Kontaktformular: <${user}>`, // sender address
+      from: email, // sender address
       to: user, // list of receivers
       subject: "Kontaktformular ✔", // Subject line
       text: "Kontaktformular Webseite Dimaaro:", // plain text body
